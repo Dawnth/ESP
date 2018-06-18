@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Personality Start="3C" Stop="0D" CheckStyle="Complement" CI="1" CMI="1" LI="2" PI="3" CSI="4" HEX="false" Compare="1" Relength="" Recall="3E"  Restop="0D">
+  <Module Name="Run Open Loop">
+    <Command Name="Motor Control - Enable Open Loop" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="030980"/>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Disable Open Loop" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="030980"/>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get Open Loop Enable State" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="030981"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Run Motor Open Loop" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="070982"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Frequency" ItemType="U11_5LE" Value="4" Coefficient="32" Small="1"/>
+        <Item Sign="1" Name="Amplitude" ItemType="U3_13LE" Value="10" Coefficient="35.61" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get Open Loop Params" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="070982"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="Motor Control (Non-Core)">
+    <Command Name="Enable Gate Driver" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="038282"/>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Disable Gate Driver" CommandID="F0">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="038282"/>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="Speed Sensor">
+    <Command Name="Speed Sensor - Get Actual Speed (bRPM)" CommandID="A1">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Speed (bRPM)" ItemType="U11_5LE" Index="6" rCoefficient="32" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Speed Sensor - Get Actual Speed (sRPM)" CommandID="A2">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Speed (sRPM)" ItemType="UInt16LE" Index="6" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+</Personality>

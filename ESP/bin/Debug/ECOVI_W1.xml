@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Personality Start="ED" Stop="" CheckStyle="CRC16_1" CI="1" CMI="2" LI="1" PI="3" CSI="4" HEX="true" Compare="X" Relength="" Recall="B2"  Restop="">
+  <Serialport braudrate="9600" parity="None" />
+  <Module Name="Main">
+    <Command Name="Main - Writer Parameter First" CommandID="04" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1233"/>
+        <Item Sign="1" Name="Parameter ID" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Parameter Value" ItemType="UInt8" Value="129" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Writer Parameter Second" CommandID="04" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1233"/>
+        <Item Sign="1" Name="Parameter ID" ItemType="UInt8" Value="17" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Parameter Value" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Reset MCU" CommandID="00" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1231"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Read Status" CommandID="02" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1231"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Read Parameter" CommandID="03" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1232"/>
+        <Item Sign="1" Name="No Name1" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="Motor Contorl">
+    <Command Name="Motor Contorl - Stop Motor" CommandID="01" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1231"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Contorl - Speed Ramp" CommandID="05" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1235"/>
+        <Item Sign="1" Name="Speed" ItemType="UInt16" Value="00" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="Accelerate" ItemType="UInt16" Value="00" Coefficient="10" Small="0"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="OOB">
+    <Command Name="OOB - Setup Measurement" CommandID="0A" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1237"/>
+        <Item Sign="1" Name="No Name1" ItemType="UInt8" Value="04" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="No Name2" ItemType="UInt8" Value="25" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="No Name3" ItemType="UInt8" Value="01" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="No Name4" ItemType="UInt8" Value="00" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="No Name5" ItemType="UInt8" Value="00" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="No Name6" ItemType="UInt8" Value="00" Coefficient="1" Small="0"/>
+      </Parameters>
+    </Command>
+    <Command Name="OOB - Read Measurement" CommandID="0B" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1231"/>
+      </Parameters>
+    </Command>
+    <Command Name="OOB - Estimate Inertia" CommandID="0C" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="1237"/>
+        <Item Sign="1" Name="Target Speed" ItemType="UInt16" Value="52" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="Max-Speed" ItemType="UInt16" Value="52" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="Min-Speed" ItemType="UInt16" Value="36" Coefficient="10" Small="0"/>
+      </Parameters>
+    </Command>
+    <Command Name="OOB - Estimate Imbalance" CommandID="0D" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="123A"/>
+        <Item Sign="1" Name="Target Speed" ItemType="UInt16" Value="40.8" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="Max-Speed" ItemType="UInt16" Value="40.8" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="Min-Speed" ItemType="UInt16" Value="40.8" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="Max-Accelerate" ItemType="UInt16" Value="00" Coefficient="10" Small="0"/>
+        <Item Sign="1" Name="No Name1" ItemType="UInt8" Value="255" Coefficient="1" Small="0"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <CRC crctype="1">0x00000x10210x20420x30630x40840x50A50x60C60x70E70x81080x91290xA14A0xB16B0xC18C0xD1AD0xE1CE0xF1EF0x12310x02100x32730x22520x52B50x42940x72F70x62D60x93390x83180xB37B0xA35A0xD3BD0xC39C0xF3FF0xE3DE0x24620x34430x04200x14010x64E60x74C70x44A40x54850xA56A0xB54B0x85280x95090xE5EE0xF5CF0xC5AC0xD58D0x36530x26720x16110x06300x76D70x66F60x56950x46B40xB75B0xA77A0x97190x87380xF7DF0xE7FE0xD79D0xC7BC0x48C40x58E50x68860x78A70x08400x18610x28020x38230xC9CC0xD9ED0xE98E0xF9AF0x89480x99690xA90A0xB92B0x5AF50x4AD40x7AB70x6A960x1A710x0A500x3A330x2A120xDBFD0xCBDC0xFBBF0xEB9E0x9B790x8B580xBB3B0xAB1A0x6CA60x7C870x4CE40x5CC50x2C220x3C030x0C600x1C410xEDAE0xFD8F0xCDEC0xDDCD0xAD2A0xBD0B0x8D680x9D490x7E970x6EB60x5ED50x4EF40x3E130x2E320x1E510x0E700xFF9F0xEFBE0xDFDD0xCFFC0xBF1B0xAF3A0x9F590x8F780x91880x81A90xB1CA0xA1EB0xD10C0xC12D0xF14E0xE16F0x10800x00A10x30C20x20E30x50040x40250x70460x60670x83B90x93980xA3FB0xB3DA0xC33D0xD31C0xE37F0xF35E0x02B10x12900x22F30x32D20x42350x52140x62770x72560xB5EA0xA5CB0x95A80x85890xF56E0xE54F0xD52C0xC50D0x34E20x24C30x14A00x04810x74660x64470x54240x44050xA7DB0xB7FA0x87990x97B80xE75F0xF77E0xC71D0xD73C0x26D30x36F20x06910x16B00x66570x76760x46150x56340xD94C0xC96D0xF90E0xE92F0x99C80x89E90xB98A0xA9AB0x58440x48650x78060x68270x18C00x08E10x38820x28A30xCB7D0xDB5C0xEB3F0xFB1E0x8BF90x9BD80xABBB0xBB9A0x4A750x5A540x6A370x7A160x0AF10x1AD00x2AB30x3A920xFD2E0xED0F0xDD6C0xCD4D0xBDAA0xAD8B0x9DE80x8DC90x7C260x6C070x5C640x4C450x3CA20x2C830x1CE00x0CC10xEF1F0xFF3E0xCF5D0xDF7C0xAF9B0xBFBA0x8FD90x9FF80x6E170x7E360x4E550x5E740x2E930x3EB20x0ED10x1EF0</CRC>
+</Personality>

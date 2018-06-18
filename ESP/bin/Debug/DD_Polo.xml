@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Personality Start="FF" Stop="" CheckStyle="None" CI="2" CMI="1" LI="2" PI="3" CSI="4" HEX="true" Compare="0" Relength="3" Recall="FF" Restop="">
+  <Serialport braudrate="2400" parity="Odd" />
+  <Module Name="Motor Control">
+    <Command Name="Motor Control - Run Left Motor bRPM" CommandID="11">
+      <Parameters>
+        <Item Sign="0" Name="Length0" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Left Speed (bRPM)" ItemType="UInt8" Value="00" Coefficient="0.4632" Small="1"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Run Right Motor bRPM" CommandID="22">
+      <Parameters>
+        <Item Sign="0" Name="Length0" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Right Speed (bRPM)" ItemType="UInt8" Value="00" Coefficient="0.4632" Small="1"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Run Motor SPIN sRPM" CommandID="33">
+      <Parameters>
+        <Item Sign="0" Name="Length0" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="SPIN Speed (bRPM)" ItemType="UInt8" Value="00" Coefficient="0.0772" Small="1"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Stop Motor" CommandID="66">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="0" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Synchronization" CommandID="88">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="0" Small="1"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="Tankage Monitor">
+    <Command Name="Tankage Monitor - Start Tankage Monitor" CommandID="44">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="0" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Tankage Monitor - Start Tankage Monitor(ProductMode)" CommandID="44">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="11"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="0" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Tankage Monitor - Get Tankage Monitor" CommandID="55">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="0" Small="1"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Value" ItemType="UInt8" Index="2" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+    <Command Name="Tankage Monitor - Initialization Tankage Monitor" CommandID="77">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+        <Item Sign="1" Name="Acceleration" ItemType="UInt16" Value="00" Coefficient="0" Small="1"/>
+      </Parameters>
+    </Command>
+  </Module>
+</Personality>

@@ -1,0 +1,203 @@
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\bin\Debug\ESP.exe.config
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\bin\Debug\ESP.exe.manifest
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\bin\Debug\ESP.application
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\bin\Debug\ESP.exe
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\bin\Debug\ESP.pdb
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Properties.Resources.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.csproj.GenerateResource.Cache
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.exe.manifest
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.application
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.exe
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.pdb
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Checksum.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Debug1.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Debug2.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Demo2.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.EcoviAbout.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Form1.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Demo1.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.LineH.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.LineV.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.ListViewEA.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.SerialPortOption.resources
+C:\Documents and Settings\Chend\My Documents\Visual Studio 2005\Projects\ECOVI_SP\ECOVI_SP\obj\Debug\ESP.Time.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\bin\Debug\ESP.exe.config
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\bin\Debug\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\bin\Debug\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\bin\Debug\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\bin\Debug\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.CheckSum.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Debug1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Debug2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Demo2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.EcoviAbout.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Form1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Demo1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.LineH.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.LineV.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.ListViewEA.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.OSC.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Properties.Resources.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.SerialPortOption.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.Time.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.csproj.GenerateResource.Cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP原始文件备份\ESP\obj\Debug\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\ESP.exe.config
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\Nobi.StatusChart.dll
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Release\Nobi.StatusChart.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.CheckSum.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Debug1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Debug2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Demo2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.About.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Form1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Demo1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.LineH.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.LineV.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.ListViewEA.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.OSC.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Properties.Resources.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.SerialPortOption.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.Time.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.csproj.GenerateResource.Cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Release\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Debug\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Debug\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Debug\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Debug\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Debug\Nobi.StatusChart.dll
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\bin\Debug\Nobi.StatusChart.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.CheckSum.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Debug1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Debug2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Demo2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.About.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Form1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Demo1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.LineH.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.LineV.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.ListViewEA.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.OSC.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Properties.Resources.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.SerialPortOption.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.Time.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.csproj.GenerateResource.Cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\Projects\ESP\ESP\obj\Debug\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\bin\Debug\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\bin\Debug\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\bin\Debug\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\bin\Debug\ESP.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\bin\Debug\Nobi.StatusChart.dll
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\bin\Debug\Nobi.StatusChart.pdb
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.CheckSum.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Debug1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Debug2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Demo2.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.About.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Form1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Demo1.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.LineH.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.LineV.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.ListViewEA.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.OSC.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Properties.Resources.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.SerialPortOption.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.Time.resources
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.csproj.GenerateResource.Cache
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.exe.manifest
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.application
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.exe
+C:\Documents and Settings\chend\My Documents\Visual Studio 2005\ESP\ESP\obj\Debug\ESP.pdb
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\bin\Debug\ESP.exe.manifest
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\bin\Debug\ESP.application
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\bin\Debug\ESP.exe
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\bin\Debug\ESP.pdb
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\bin\Debug\Nobi.StatusChart.pdb
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.CheckSum.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Debug1.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Debug2.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Demo2.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.About.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Form1.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Demo1.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.LineH.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.LineV.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.ListViewEA.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.OSC.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Properties.Resources.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.SerialPortOption.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.Time.resources
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.csproj.GenerateResource.Cache
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.exe.manifest
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.application
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.exe
+D:\Work\Anthony\Project\VS2005\Projects\ESP\ESP\obj\Debug\ESP.pdb
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.exe
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.pdb
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Release\ESP.exe.manifest
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Release\ESP.application
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Release\ESP.exe
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Release\ESP.pdb
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Release\Nobi.StatusChart.pdb
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ResolveAssemblyReference.cache
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.CheckSum.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Debug1.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Debug2.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Demo2.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.About.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Form1.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Demo1.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.LineH.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.LineV.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.ListViewEA.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.OSC.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Properties.Resources.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.SerialPortOption.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.Time.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.csproj.GenerateResource.Cache
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.exe.manifest
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Release\ESP.application
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Debug\ESP.exe.manifest
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Debug\ESP.application
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Debug\ESP.exe
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Debug\ESP.pdb
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\bin\Debug\Nobi.StatusChart.pdb
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.CheckSum.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Debug1.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Debug2.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Demo2.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.About.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Form1.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Demo1.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.LineH.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.LineV.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.ListViewEA.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.OSC.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Properties.Resources.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.SerialPortOption.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.Time.resources
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.csproj.GenerateResource.Cache
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.exe.manifest
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.application
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.exe
+C:\Users\dongchen\Documents\VCS Projects\ESP\ESP\obj\Debug\ESP.pdb

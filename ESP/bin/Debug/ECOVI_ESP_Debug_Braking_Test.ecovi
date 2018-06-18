@@ -1,0 +1,22 @@
+<Ecovi>
+  <Wash Enable="True" Time="1500">
+    <Item_1 Time="2" Speed="80" Acceleration="100" />
+    <Item_2 Time="2" Speed="80" Acceleration="100" />
+    <Item_3 Time="1" Speed="0" Acceleration="0" />
+  </Wash>
+  <SPIN Enable="False" Time="150">
+    <Item_1 Time="20" Speed="400" Acceleration="0" />
+    <Item_2 Time="20" Speed="800" Acceleration="0" />
+    <Item_3 Time="20" Speed="800" Acceleration="0" />
+    <Item_4 Time="20" Speed="0" Acceleration="0" />
+  </SPIN>
+  <Debug Start="02" Stop="03" Repeat="False" Intermission="10" HEX="false" Checksum="21">
+    <left Command="FF0011050000000000" Sindex="621" Aindex="821" Scoefficient="32" Acoefficient="32" />
+    <right Command="FF0011050100000000" Sindex="621" Aindex="821" Scoefficient="32" Acoefficient="32" />
+    <stop Command="FF0011050000000000" Sindex="621" Aindex="821" Scoefficient="0" Acoefficient="0" />
+    <SPIN_1 Command="FF0011050000000000" Sindex="621" Aindex="821" Scoefficient="32" Acoefficient="32" />
+    <SPIN_2 Command="FF0011050000000000" Sindex="621" Aindex="821" Scoefficient="32" Acoefficient="32" />
+    <SPIN_3 Command="FF0011050000000000" Sindex="621" Aindex="821" Scoefficient="32" Acoefficient="32" />
+    <SPIN_4 Command="FF0011050000000000" Sindex="621" Aindex="821" Scoefficient="32" Acoefficient="32" />
+  </Debug>
+</Ecovi>

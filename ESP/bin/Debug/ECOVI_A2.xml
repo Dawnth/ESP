@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Personality Start="B2" Stop="" CheckStyle="CRC16_1" CI="1" CMI="1" LI="2" PI="3" CSI="4" HEX="true" Compare="X" Relength="" Recall="B2"  Restop="">
+  <Serialport braudrate="2400" parity="None" />
+  <Module Name="Main">
+    <Command Name="Main - PING" CommandID="01A1" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="03"/>
+        <Item Sign="1" Name="data1(no use)" ItemType="UInt8" Value="0" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="data2(no use)" ItemType="UInt8" Value="0" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="Motor Number" ItemType="UInt8" Value="1" Coefficient="1" Small="0"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Software Version" ItemType="UInt16" Index="6" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+    <Command Name="Main - REQUEST" CommandID="01A2" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Motor Temperature" ItemType="UInt8" Index="6" rCoefficient="1" rSmall="0"/>
+        <Item Sign="1" Name="IPM Temperature" ItemType="UInt8" Index="8" rCoefficient="1" rSmall="0"/>
+        <Item Sign="1" Name="Fault code" ItemType="UInt16" Index="10" rCoefficient="1" rSmall="0"/>
+        <Item Sign="1" Name="Target Speed" ItemType="UInt16" Index="14" rCoefficient="1" rSmall="0"/>
+        <Item Sign="1" Name="Load Value" ItemType="UInt16" Index="18" rCoefficient="1" rSmall="0"/>
+        <Item Sign="1" Name="OOB Score" ItemType="UInt16" Index="22" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+    <Command Name="Main - Load enable" CommandID="01A3" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - FCT" CommandID="01A4" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Speed Set" CommandID="01A5" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="04"/>
+        <Item Sign="1" Name="Accelerate" ItemType="UInt16" Value="0" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="Speed" ItemType="UInt16" Value="0" Coefficient="1" Small="0"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Motor Temperature" CommandID="01A6" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - FCT Ping" CommandID="01A7" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="OOB">
+    <Command Name="OOB - Start OOB" CommandID="01A5" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="04"/>
+        <Item Sign="1" Name="Accelerate" ItemType="UInt16" Value="100" Coefficient="1" Small="0"/>
+        <Item Sign="1" Name="Speed" ItemType="UInt16" Value="90" Coefficient="1" Small="0"/>
+      </Parameters>
+    </Command>
+    <Command Name="OOB - Get OOB with no process" CommandID="01A8">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="OOB with no process" ItemType="UInt8" Index="6" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+    <Command Name="OOB - Get OOB Value" CommandID="01A2">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="OOB with no process" ItemType="UInt8" Index="6" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+  </Module>
+  <CRC crctype="1">0x00000x10210x20420x30630x40840x50A50x60C60x70E70x81080x91290xA14A0xB16B0xC18C0xD1AD0xE1CE0xF1EF0x12310x02100x32730x22520x52B50x42940x72F70x62D60x93390x83180xB37B0xA35A0xD3BD0xC39C0xF3FF0xE3DE0x24620x34430x04200x14010x64E60x74C70x44A40x54850xA56A0xB54B0x85280x95090xE5EE0xF5CF0xC5AC0xD58D0x36530x26720x16110x06300x76D70x66F60x56950x46B40xB75B0xA77A0x97190x87380xF7DF0xE7FE0xD79D0xC7BC0x48C40x58E50x68860x78A70x08400x18610x28020x38230xC9CC0xD9ED0xE98E0xF9AF0x89480x99690xA90A0xB92B0x5AF50x4AD40x7AB70x6A960x1A710x0A500x3A330x2A120xDBFD0xCBDC0xFBBF0xEB9E0x9B790x8B580xBB3B0xAB1A0x6CA60x7C870x4CE40x5CC50x2C220x3C030x0C600x1C410xEDAE0xFD8F0xCDEC0xDDCD0xAD2A0xBD0B0x8D680x9D490x7E970x6EB60x5ED50x4EF40x3E130x2E320x1E510x0E700xFF9F0xEFBE0xDFDD0xCFFC0xBF1B0xAF3A0x9F590x8F780x91880x81A90xB1CA0xA1EB0xD10C0xC12D0xF14E0xE16F0x10800x00A10x30C20x20E30x50040x40250x70460x60670x83B90x93980xA3FB0xB3DA0xC33D0xD31C0xE37F0xF35E0x02B10x12900x22F30x32D20x42350x52140x62770x72560xB5EA0xA5CB0x95A80x85890xF56E0xE54F0xD52C0xC50D0x34E20x24C30x14A00x04810x74660x64470x54240x44050xA7DB0xB7FA0x87990x97B80xE75F0xF77E0xC71D0xD73C0x26D30x36F20x06910x16B00x66570x76760x46150x56340xD94C0xC96D0xF90E0xE92F0x99C80x89E90xB98A0xA9AB0x58440x48650x78060x68270x18C00x08E10x38820x28A30xCB7D0xDB5C0xEB3F0xFB1E0x8BF90x9BD80xABBB0xBB9A0x4A750x5A540x6A370x7A160x0AF10x1AD00x2AB30x3A920xFD2E0xED0F0xDD6C0xCD4D0xBDAA0xAD8B0x9DE80x8DC90x7C260x6C070x5C640x4C450x3CA20x2C830x1CE00x0CC10xEF1F0xFF3E0xCF5D0xDF7C0xAF9B0xBFBA0x8FD90x9FF80x6E170x7E360x4E550x5E740x2E930x3EB20x0ED10x1EF0</CRC>
+</Personality>

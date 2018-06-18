@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Personality Start="02" Stop="03" CheckStyle="Add" CI="1" CMI="1" LI="2" PI="3" CSI="4" HEX="false" Compare="0" Relength="" Recall="02"  Restop="03">
+  <Module Name="ESP - Main">
+    <Command Name="Main - Query Production ID" CommandID="FF0001" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Production ID" ItemType="String_6" Index="10" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+    <Command Name="Main - Query Software Version" CommandID="FF0002">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Major" ItemType="String_4" Index="10" rCoefficient="1" rSmall="0"/>
+      </Response>
+    </Command>
+    <Command Name="Main - LED" CommandID="FF0003">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="LED SELECTED" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Set 6Kg Motor Parameter" CommandID="FF0004">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Motor Configured Flag" ItemType="UInt8" Value="06" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Set 7Kg Motor Parameter" CommandID="FF0004">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Motor Configured Flag" ItemType="UInt8" Value="07" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Set 8Kg Motor Parameter" CommandID="FF0004">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Motor Configured Flag" ItemType="UInt8" Value="08" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Set 9Kg Motor Parameter" CommandID="FF0004">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Motor Configured Flag" ItemType="UInt8" Value="09" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Main - Get Motor Parameter" CommandID="FF0005">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Motor Configured Flag" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - Motor Control">
+    <Command Name="Motor Control - Run Motor bRPM" CommandID="FF0011">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Speed (bRPM)" ItemType="U11_5LE" Value="00" Coefficient="32" Small="1"/>
+        <Item Sign="1" Name="Acceleration (bRPM/s )" ItemType="U11_5LE" Value="00" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Run Motor bRPM Left" CommandID="FF0011">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Speed (bRPM)" ItemType="U11_5LE" Value="80" Coefficient="32" Small="1"/>
+        <Item Sign="1" Name="Acceleration (bRPM/s )" ItemType="U11_5LE" Value="80" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Run Motor bRPM Right" CommandID="FF0011">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Speed (bRPM)" ItemType="U11_5LE" Value="80" Coefficient="32" Small="1"/>
+        <Item Sign="1" Name="Acceleration (bRPM/s )" ItemType="U11_5LE" Value="80" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get Target Speed (bRPM)" CommandID="FF0012">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Speed (bRPM)" ItemType="U11_5LE" Index="10" rCoefficient="32" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Motor Control - Brake" CommandID="FF0013">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get target Direction" CommandID="FF0014">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Motor Control - Run Motor sRPM" CommandID="FF0015">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Speed (sRPM)" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Acceleration (sRPM/s)" ItemType="U8_8LE" Value="00" Coefficient="256" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Run Motor 0 sRPM" CommandID="FF0015">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Speed (sRPM)" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Acceleration (sRPM/s)" ItemType="U8_8LE" Value="00" Coefficient="256" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get Target Speed (sRPM)" CommandID="FF0016">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Speed (sRPM)" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Motor Control - Enable Open Loop" CommandID="FF0017">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get Open Loop Enable State" CommandID="FF0018">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Motor Control - Run Motor Open Loop" CommandID="FF0019">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Frequency" ItemType="U11_5LE" Value="00" Coefficient="32" Small="1"/>
+        <Item Sign="1" Name="Amplitude" ItemType="U3_13LE" Value="00" Coefficient="8192" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Motor Control - Get Open Loop Params" CommandID="FF001A">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Frequency" ItemType="UInt16" Index="12" rCoefficient="32" rSmall="1"/>
+        <Item Sign="1" Name="Amplitude" ItemType="UInt16" Index="16" rCoefficient="35.6" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Motor Control(Unique) - SPIN" CommandID="FF001B">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="05"/>
+        <Item Sign="1" Name="Direction" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Speed (bRPM)" ItemType="U11_5LE" Value="00" Coefficient="32" Small="1"/>
+        <Item Sign="1" Name="Acceleration (bRPM/s )" ItemType="U11_5LE" Value="00" Coefficient="32" Small="1"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="ESP - Clutch">
+    <Command Name="Clutch - Control" CommandID="FF0021" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Channel Index" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Clutch - GET Clutch Status" CommandID="FF0022">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="ID" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - Error Manager">
+    <Command Name="Error Manager - Get All Errors" CommandID="FF0031">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Flag Byte 0 (0-7)" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Flag Byte 1 (8-15)" ItemType="UInt8" Index="12" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Flag Byte 2 (16-23)" ItemType="UInt8" Index="14" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Error Manager - Clear All Errors" CommandID="FF0032">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="ESP - Out Of Balance">
+    <Command Name="Out Of Balance - Start Measurement" CommandID="FF0041">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="Out Of Balance - CMD OOB STATUS" CommandID="FF0042">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Status" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Out Of Balance - Get OOB(Kg)" CommandID="FF0043">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Score" ItemType="U11_5LE" Index="10" rCoefficient="32" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - A/D">
+    <Command Name="A/D - Get DC Value" CommandID="FF0051">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="DCBus" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="IDC" ItemType="UInt16LE" Index="14" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="A/D - Get All Value" CommandID="FF0051">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="DCValue" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="IPMTempValue" ItemType="UInt16LE" Index="14" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="ISenseValue" ItemType="UInt16LE" Index="18" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="ACSenseValue" ItemType="UInt16LE" Index="22" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="ClutchSenseValue" ItemType="UInt16LE" Index="26" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="A/D - Get IPM Temperature Value" CommandID="FF0052">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Value" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="A/D - Get Current Sampling" CommandID="FF0053">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Value" ItemType="UInt16" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - EEPROM">
+    <Command Name="EEPROM - Write Confirmation Flag" CommandID="FF0061">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8"       Value="08"/>
+        <Item Sign="1" Name="Address" ItemType="UInt16"      Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="EMS ID" ItemType="UInt8"       Value="170" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Equipment ID" ItemType="UInt8" Value="02" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Year" ItemType="UInt8"         Value="03" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Month" ItemType="UInt8"        Value="04" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Day" ItemType="UInt8"          Value="05" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Flag" ItemType="UInt8"         Value="06" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="EEPROM - Read Confirmation Flag" CommandID="FF0062">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8"       Value="03"/>
+        <Item Sign="1" Name="Address" ItemType="UInt16"      Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Param Length" ItemType="UInt8"       Value="06" Coefficient="1" Small="1"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="EMS ID"        ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Equipment ID"  ItemType="UInt8" Index="12" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Year"          ItemType="UInt8" Index="14" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Month"         ItemType="UInt8" Index="16" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Day"           ItemType="UInt8" Index="18" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Flag"          ItemType="UInt8" Index="20" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="EEPROM - Read EEPROM Status" CommandID="FF0063">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Value" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="EEPROM - Clear Error" CommandID="FF0061">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="08"/>
+        <Item Sign="1" Name="Address" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Addr 1" ItemType="UInt8" Value="255" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Addr 2" ItemType="UInt8" Value="255" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Addr 3" ItemType="UInt8" Value="255" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Addr 4" ItemType="UInt8" Value="255" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Addr 5" ItemType="UInt8" Value="255" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Addr 6" ItemType="UInt8" Value="255" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+  </Module>
+  <Module Name="ESP - Motor Control (Non-Core)">
+    <Command Name="Enable Gate Driver" CommandID="FF0071">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Enable State" ItemType="UInt8" Value="01" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Set PI Gains" CommandID="FF0072">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="06"/>
+        <Item Sign="1" Name="Kp Value" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Kp Num. Bits" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Ki Value" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="Ki Num. Bits" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Get PI Gains" CommandID="FF0073">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Kp Value" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Kp Num. Bits" ItemType="UInt8" Index="14" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Ki Value" ItemType="UInt16LE" Index="16" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Ki Num. Bits" ItemType="UInt8" Index="20" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="SET VolLimit And DeltaAngle" CommandID="FF0075">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="04"/>
+        <Item Sign="1" Name="VolLimit" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="DeltaAngle" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="GET VolLimit And DeltaAngle" CommandID="FF0076">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="VolLimit" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="DeltaAngle" ItemType="UInt16LE" Index="14" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - Motor Temperature">
+    <Command Name="START MOTORTEMPERATURE MEASUREMENT" CommandID="FF0081">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="STOP MOTORTEMPERATURE MEASUREMENT" CommandID="FF0082">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="SET INJECTVOLTAGE" CommandID="FF0083">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="02"/>
+        <Item Sign="1" Name="InjectVoltageAmplitudeAD" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="SET OFFSETVOLTAGE" CommandID="FF0084">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="02"/>
+        <Item Sign="1" Name="Dig10mVVoltageOffset" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="SET ResistorCoefficient" CommandID="FF0085">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="02"/>
+        <Item Sign="1" Name="ResistorCoefficient" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="SET MotorTemperature Measurement PARAMS" CommandID="FF0086">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="06"/>
+        <Item Sign="1" Name="InjectVoltageAmplitudeAD" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="CurrentRampTimeMs" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="CurrentSteadyTimeMs" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="ResistorCoefficient" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="SET CALIBRATION TIMEOUT SECONDS" CommandID="FF0087">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="02"/>
+        <Item Sign="1" Name="CurrentRampTimeMs" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="CurrentSteadyTimeMs" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="SET Dig10mRInitResistor" CommandID="FF0088">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="02"/>
+        <Item Sign="1" Name="Dig10mRInitResistor" ItemType="UInt16LE" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="GET Dig10mRResistorValue" CommandID="FF0089">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Dig10mRResistorValue" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="GET IPMTemperature" CommandID="FF008A">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="TempValue" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="GET MOTORTemperature" CommandID="FF008B">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="MotorTemperature" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="GET AVGCURRENTVALUE" CommandID="FF008C">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="TempValue" ItemType="U11_5LE" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="GET ActualCurrentValue" CommandID="FF008D">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="TempValue" ItemType="U11_5LE" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="GET MEASUREMENTSTATE" CommandID="FF008E">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="MEASUREMENTSTATE" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - Speed Senser">
+    <Command Name="Speed Senser - GET SPEED BRPM" CommandID="FF0091" >
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Hall Speed BRPM" ItemType="UInt16" Index="10" rCoefficient="32" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Speed Senser - GET SPEED SRPM" CommandID="FF0092">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Hall Speed SRPM" ItemType="UInt16" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Speed Senser - GET Hall Angle Value" CommandID="FF0093">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Hall Angle Value A" ItemType="UInt16" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Hall Angle Value B" ItemType="UInt16" Index="14" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Hall Angle Value C" ItemType="UInt16" Index="18" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Hall Angle Value D" ItemType="UInt16" Index="22" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Hall Angle Value E" ItemType="UInt16" Index="26" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Hall Angle Value F" ItemType="UInt16" Index="30" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Speed Senser - Set AngleUpdate Table" CommandID="FF0094">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="0C"/>
+        <Item Sign="1" Name="AngleUpdate 1 up" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="AngleUpdate 1 down" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="AngleUpdate 2 up" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="AngleUpdate 2 down" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="AngleUpdate 3 up" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+        <Item Sign="1" Name="AngleUpdate 3 down" ItemType="UInt16" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="Speed Senser - GET Hall Ports Value" CommandID="FF0095">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Hall Ports Value" ItemType="UInt16" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - Load Sense">
+    <Command Name="Load Sense - Start Measurement" CommandID="FF00E1">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="Load Sense - CMD GET LOAD MEASUREMENT STATUS" CommandID="FF00E2">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Status" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Load Sense - Get load Score" CommandID="FF00E3">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Score" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+    <Command Name="Load Sense - GET ENERGY VALUES" CommandID="FF00E4">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Accel Energy Low" ItemType="UInt16LE" Index="10" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Accel Energy High" ItemType="UInt16LE" Index="14" rCoefficient="65535" rSmall="1"/>
+        <Item Sign="1" Name="Accel Samples" ItemType="UInt16LE" Index="18" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Steady State 1 Average Power" ItemType="UInt16LE" Index="22" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Uncompensated LoadScore" ItemType="UInt16LE" Index="26" rCoefficient="1" rSmall="1"/>
+        <Item Sign="1" Name="Final LoadScore" ItemType="UInt16LE" Index="30" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+  <Module Name="ESP - FCT">
+    <Command Name="FCT - Set FCT State Enable" CommandID="FF00A1">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="01"/>
+        <Item Sign="1" Name="Enable" ItemType="UInt8" Value="00" Coefficient="1" Small="1"/>
+      </Parameters>
+    </Command>
+    <Command Name="FCT - Set Motor Over Current Protected" CommandID="FF00A2">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+    </Command>
+    <Command Name="FCT - Get Motor Over Current Protected Flag" CommandID="FF00A3">
+      <Parameters>
+        <Item Sign="0" Name="Length" ItemType="UInt8" Value="00"/>
+      </Parameters>
+      <Response>
+        <Item Sign="1" Name="Motor Over Current Protected Flag" ItemType="UInt8" Index="10" rCoefficient="1" rSmall="1"/>
+      </Response>
+    </Command>
+  </Module>
+</Personality>
+
